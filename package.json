@@ -1,0 +1,22 @@
+{
+  "name": "email-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "mjml --watch src/index.mjml --output src/index.html",
+    "server": "live-server --host=localhost --open=src",
+    "build": "mjml src/index.mjml --output src/index.html",
+    "dev": "concurrently \"npm run start\" \"npm run server\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {}
+,
+  "devDependencies": {
+    "mjml": "^4.15.3",
+    "concurrently": "6.2.1",
+    "live-server": "1.2.1"
+  }
+}
