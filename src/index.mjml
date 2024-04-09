@@ -42,6 +42,7 @@
 
       .years-text {
         padding-top: 16px;
+        padding-left: 20px;
       }
 
       .bold-text {
@@ -133,6 +134,7 @@
 
         .years-text {
           padding-top: 8px;
+          padding-left: 0;
         }
 
         .metrics-number {
@@ -177,7 +179,7 @@
     <mj-section padding="8px 0 0" css-class="mobile-wrapper">
       <mj-group>
         <mj-column width="100%">
-          <mj-text padding="16px 0 0">
+          <mj-text align="left" padding="16px 0 0">
             <a href="https://www.nicequest.com/" target="_blank"><img width="108px" src="https://i.postimg.cc/jqPRZ5FQ/Main.png" alt="Nicequest logo" /></a>
           </mj-text>
           <mj-text align="left" font-size="40px" font-weight="700" padding="46px 0 0">
@@ -186,7 +188,7 @@
               <h2>
           </mj-text>
           <mj-text mj-class="body-text" padding="16px 0 0" line-height="120%">
-            Hola {{name}},</br>
+            Hola ${name},</br>
             Empezamos el 2024 con muchas ganas de seguir sumando buenas experiencias, por eso queremos que sepas que valoramos muchísimo que formes parte de nuestra comunidad.
           </mj-text>
         </mj-column>
@@ -254,7 +256,7 @@
           7
         </mj-text>
         <mj-text font-size="18px" font-weight="600" padding="8px 0 16px">
-          Regalo(s)
+          Regalos
         </mj-text>
       </mj-column>
       <mj-column width="33%">
@@ -265,7 +267,7 @@
           10
         </mj-text>
         <mj-text align="left" font-size="18px" font-weight="600" padding="8px 0 16px">
-          Donacion(es)
+          Donaciones
         </mj-text>
       </mj-column>
       <mj-column width="33%">
@@ -276,7 +278,7 @@
           15
         </mj-text>
         <mj-text align="left" font-size="18px" font-weight="600" padding="8px 0 0">
-          Sorteo(s)
+          Sorteos
         </mj-text>
       </mj-column>
       <mj-column width="84%">
