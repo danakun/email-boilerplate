@@ -89,9 +89,7 @@
         box-sizing: border-box;
       }
 
-      @media only screen and (max-width: 640px) {}
-
-      @media only screen and (max-width: 600px) {
+      @media only screen and (max-width: 640px) {
         .mobile-wrapper {
           padding: 0 16px !important;
         }
@@ -100,6 +98,10 @@
           border-radius: 0;
           padding: 32px 16px;
         }
+      }
+
+      @media only screen and (max-width: 600px) {
+
 
         .button-dark {
           width: 100% !important;
@@ -122,7 +124,7 @@
         }
 
         h2 {
-          font-size: 24px !important;
+          font-size: 28px !important;
         }
 
         .years-number {
@@ -162,6 +164,12 @@
           text-align: center;
         }
       }
+
+      @media only screen and (max-width: 390px) {
+        h2 {
+          font-size: 24px !important;
+        }
+      }
     </mj-style>
   </mj-head>
   <mj-body background-color="#FFF">
@@ -169,7 +177,9 @@
     <mj-section padding="8px 0 0" css-class="mobile-wrapper">
       <mj-group>
         <mj-column width="100%">
-          <mj-image align="left" src="./images/logo.png" alt="Nicequest logo" width="108px" padding="16px 0 0" />
+          <mj-text padding="16px 0 0">
+            <a href="https://www.nicequest.com/" target="_blank"><img width="108px" src="https://i.postimg.cc/jqPRZ5FQ/Main.png" alt="Nicequest logo" /></a>
+          </mj-text>
           <mj-text align="left" font-size="40px" font-weight="700" padding="46px 0 0">
             <h2 class="heading">
               Tu 2023 en Nicequest #MyNicequestYear2023
@@ -190,16 +200,16 @@
     <!--Years-->
     <mj-section padding="32px 0">
       <mj-column width="50%">
-        <mj-image src="./images/number__image.png" alt="years with us" />
+        <mj-image src="https://i.postimg.cc/ncwJRJT1/number-image.png" alt="years with us" />
       </mj-column>
       <mj-column width="50%" vertical-align="middle" padding="32px 0 0">
         <mj-text align="left" font-weight="700" padding-left="20px" css-class="p-mobile">
           <span class="years-number">
             4 años
           </span>
-          <!-- <mj-text align="left" font-size="58px" font-weight="700">
+          <!-- Conditional rendering for year(s) word
             {{years}} {{years > 1 ? 'years' : 'year'}}
-          </mj-text> -->
+           -->
         </mj-text>
         <mj-text align="left" font-size="18px" line-height="120%" font-weight="400" color="#636574" css-class="p-mobile">
           <div class="years-text">
@@ -283,7 +293,7 @@
     <!--Trophy-->
     <mj-section padding="32px 0">
       <mj-column width="50%">
-        <mj-image src="./images/trophy_nicequest.jpg" alt="your Nicequest trophy" padding="0" />
+        <mj-image src="https://i.postimg.cc/rwBLTNB0/trophy-nicequest.jpg" alt="your Nicequest trophy" padding="0" />
       </mj-column>
       <mj-column width="50%" css-class="extra-pt">
         <mj-text align="left" css-class="p-mobile" font-size="18px" font-weight="400" color="#636574" padding="0 32px 16px">
@@ -370,7 +380,7 @@
         </mj-text>
       </mj-column>
       <mj-column width="50%" css-class="faq-pt">
-        <mj-image src="./images/girl_img.png" alt="A young woman, showing her phone screen with the Nicequest trophy photo." />
+        <mj-image src="https://i.postimg.cc/dVkKgxxc/girl-img.png" alt="A young woman, showing her phone screen with the Nicequest trophy photo." />
       </mj-column>
     </mj-section>
     <!--Firma-->
@@ -394,10 +404,10 @@
       <mj-column width="50%">
         <mj-text>
           <div class="footer-links">
-            <a href="https://www.facebook.com/"><img width="32px" src="./images/fb_link.png" /></a>
-            <a href="https://twitter.com/nicequest"><img width="32px" src="./images/x_link.png" /></a>
-            <a href="https://www.instagram.com/nicequest/"><img width="32px" src="./images/insta_link.png" /></a>
-            <a href="https://www.youtube.com/c/nicequest"><img width="32px" src="./images/youtube_link.png" /></a>
+            <a href="https://www.facebook.com/Nicequest/" target="_blank"><img width="32px" src="https://i.postimg.cc/5NtJS050/fb-link.png" /></a>
+            <a href="https://twitter.com/nicequest" target="_blank"><img width="32px" src="https://i.postimg.cc/RhgBz5m4/x-link.png" /></a>
+            <a href="https://www.instagram.com/nicequest/" target="_blank"><img width="32px" src="https://i.postimg.cc/CM7Y8DqX/insta-link.png" /></a>
+            <a href="https://www.youtube.com/c/nicequest" target="_blank"><img width="32px" src="https://i.postimg.cc/Fzr4qF2T/youtube-link.png" /></a>
           </div>
         </mj-text>
         <!--Another option for social links-->
@@ -415,7 +425,7 @@
       <mj-column width="50%">
         <mj-text align="right" font-size="12px" font-weight="400" padding="10px 0" color="#636574">
           <div class="center-text">
-            <a href="https://www.nicequest.com/" class="link">&copy; Nicequest desde 2005 en España</a>
+            <a href="https://www.nicequest.com/" target="_blank" class="link">&copy; Nicequest desde 2005 en España</a>
           </div>
         </mj-text>
       </mj-column>
