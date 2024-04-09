@@ -1,14 +1,423 @@
 <mjml>
   <mj-head>
+    <mj-title>Say hello to Nicequest Email</mj-title>
+    <mj-font name="Poppins" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"></mj-font>
+    <mj-breakpoint width="600px" />
+    <mj-attributes>
+      <mj-all font-family="Poppins, Helvetica, Arial, sans-serif" padding="0"></mj-all>
+      <mj-text color="#222432" font-size="16px" font-weight="400"></mj-text>
+      <mj-class name="body-text" align="left" font-size="16px" font-weight="400" line-height="120%" color="#636574" />
+      <mj-class name="body-text-m" align="left" font-size="18px" font-weight="400" line-height="120%" color="#636574" />
+      <mj-class name="body-highlighted" align="left" font-size="16px" font-weight="600" color="#222432" line-height="120%" />
+      <mj-class name="body-bold" align="left" font-size="40px" font-weight="700" line-height="120%" color="#222432" />
+      <mj-class name="subtitle" align="left" font-size="14px" line-height="120%" font-weight="400" color="#636574" text-transform="uppercase" />
+      <mj-class name="button" background-color="#105AE1" padding-left="32px" inner-padding="12px 32px" border-radius="30px" height="48px" font-size="18px" font-weight="600" fluid-on-mobile="true" />
+    </mj-attributes>
+    <mj-style inline="inline">
+      .link {
+        color: #636574;
+        display: inline;
+        text-decoration: none;
+        line-height: 160%;
+      }
 
+      h2 {
+        color: #222432;
+        font-size: 40px;
+        margin: 0;
+      }
+
+      p {
+        margin: 0;
+      }
+    </mj-style>
+    <mj-style>
+      .link:hover {
+        text-decoration: underline !important;
+      }
+
+      .years-number {
+        font-size: 58px;
+      }
+
+      .years-text {
+        padding-top: 16px;
+      }
+
+      .bold-text {
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      .metrics-number {
+        font-size: 32px;
+      }
+
+      .number {
+        padding-top: 32px;
+      }
+
+      .steps-text {
+        font-size: 14px;
+        line-height: 120%;
+      }
+
+      .button-dark {
+        width: 100% !important;
+      }
+
+      .button-dark a:hover {
+        background-color: #03196c !important;
+      }
+
+      .button-dark td:hover {
+        background-color: #03196c !important;
+      }
+
+      .faq-pt {
+        padding: 40px 0 20px 0 !important;
+      }
+
+      .width-80 {
+        width: 80% !important;
+      }
+
+      .yellow-wrapper {
+        border-radius: 14px;
+        padding: 32px 20px;
+        background-color: #FFC500;
+        box-sizing: border-box;
+      }
+
+      @media only screen and (max-width: 640px) {}
+
+      @media only screen and (max-width: 600px) {
+        .mobile-wrapper {
+          padding: 0 16px !important;
+        }
+
+        .yellow-wrapper {
+          border-radius: 0;
+          padding: 32px 16px;
+        }
+
+        .button-dark {
+          width: 100% !important;
+        }
+
+        .extra-pb {
+          padding-bottom: 32px !important;
+        }
+
+        .extra-pt {
+          padding-top: 20px !important;
+        }
+
+        .faq-pt {
+          padding: 20px 0 20px 0 !important;
+        }
+
+        .width-80 {
+          width: 100% !important;
+        }
+
+        h2 {
+          font-size: 24px !important;
+        }
+
+        .years-number {
+          font-size: 46px;
+        }
+
+        .years-text {
+          padding-top: 8px;
+        }
+
+        .metrics-number {
+          font-size: 32px;
+        }
+
+        .number {
+          font-size: 40px;
+          font-weight: 700;
+          line-height: 150%;
+          padding-top: 0;
+        }
+
+        .step-text {
+          font-size: 16px;
+          ;
+        }
+
+        .center-text {
+          text-align: center;
+          padding-top: 10px;
+        }
+
+        .p-mobile {
+          padding: 8px 16px 8px !important;
+        }
+
+        .footer-links {
+          text-align: center;
+        }
+      }
+    </mj-style>
   </mj-head>
-  <mj-body background-color="white">
-    <mj-section>
-      <mj-column width="100%">
-        <mj-text>
-          Hello World
+  <mj-body background-color="#FFF">
+    <!--Intro-->
+    <mj-section padding="8px 0 0" css-class="mobile-wrapper">
+      <mj-group>
+        <mj-column width="100%">
+          <mj-image align="left" src="./images/logo.png" alt="Nicequest logo" width="108px" padding="16px 0 0" />
+          <mj-text align="left" font-size="40px" font-weight="700" padding="46px 0 0">
+            <h2 class="heading">
+              Tu 2023 en Nicequest #MyNicequestYear2023
+              <h2>
+          </mj-text>
+          <mj-text mj-class="body-text" padding="16px 0 0" line-height="120%">
+            Hola {{name}},</br>
+            Empezamos el 2024 con muchas ganas de seguir sumando buenas experiencias, por eso queremos que sepas que valoramos muchísimo que formes parte de nuestra comunidad.
+          </mj-text>
+        </mj-column>
+        <mj-column width="80%" css-class="width-80">
+          <mj-text align="left" font-size="20px" font-weight="600" padding="16px 0 0" line-height="120%">
+            Descubre el resumen personalizado de tu actividad este año:
+          </mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <!--Years-->
+    <mj-section padding="32px 0">
+      <mj-column width="50%">
+        <mj-image src="./images/number__image.png" alt="years with us" />
+      </mj-column>
+      <mj-column width="50%" vertical-align="middle" padding="32px 0 0">
+        <mj-text align="left" font-weight="700" padding-left="20px" css-class="p-mobile">
+          <span class="years-number">
+            4 años
+          </span>
+          <!-- <mj-text align="left" font-size="58px" font-weight="700">
+            {{years}} {{years > 1 ? 'years' : 'year'}}
+          </mj-text> -->
+        </mj-text>
+        <mj-text align="left" font-size="18px" line-height="120%" font-weight="400" color="#636574" css-class="p-mobile">
+          <div class="years-text">
+            desde que te uniste a Nicequest y ¡esperamos que sean muchos más!
+            <div>
         </mj-text>
       </mj-column>
     </mj-section>
+    <!--Metrics-->
+    <mj-section css-class="yellow-wrapper">
+      <mj-column width="100%">
+        <mj-text align="left" font-size="20px" font-weight="600" padding="0 0 20px 0">
+          ¡Mira cuanto ha cambiado tu saldo!
+        </mj-text>
+      </mj-column>
+      <mj-column width="50%">
+        <mj-text mj-class="subtitle" padding="0" css-class="extre-pb">
+          GANASTE
+        </mj-text>
+        <mj-text align="left" font-size="40px" font-weight="700" line-height="120%" padding="0 0 8px">
+          2300 <span class="bold-text">Korus<span>
+        </mj-text>
+      </mj-column>
+      <mj-column width="50%">
+        <mj-text mj-class="subtitle" padding="0">
+          GASTASTE
+        </mj-text>
+        <mj-text align="left" font-size="40px" font-weight="700" line-height="120%" padding="0">
+          2000 <span class="bold-text">Korus<span>
+        </mj-text>
+      </mj-column>
+      <mj-column width="100%">
+        <mj-text align="left" font-size="20px" font-weight="600" padding="32px 0 20px 0" line-height="120%">
+          ¡Así fueron tus canjes en nuestra tienda!
+        </mj-text>
+      </mj-column>
+      <mj-column width="33%">
+        <mj-text mj-class="subtitle" padding="0">
+          CANJEASTE
+        </mj-text>
+        <mj-text font-size="40px" font-weight="700" line-height="120%" padding="0">
+          7
+        </mj-text>
+        <mj-text font-size="18px" font-weight="600" padding="8px 0 16px">
+          Regalo(s)
+        </mj-text>
+      </mj-column>
+      <mj-column width="33%">
+        <mj-text mj-class="subtitle" padding="0">
+          COLABORASTE EN
+        </mj-text>
+        <mj-text align="left" font-size="40px" font-weight="700" line-height="120%" padding="0">
+          10
+        </mj-text>
+        <mj-text align="left" font-size="18px" font-weight="600" padding="8px 0 16px">
+          Donacion(es)
+        </mj-text>
+      </mj-column>
+      <mj-column width="33%">
+        <mj-text align="left" font-size="14px" font-weight="400" color="#636574" padding="0">
+          PARTICIPASTE EN
+        </mj-text>
+        <mj-text align="left" font-size="40px" font-weight="700" line-height="120%" padding="0">
+          15
+        </mj-text>
+        <mj-text align="left" font-size="18px" font-weight="600" padding="8px 0 0">
+          Sorteo(s)
+        </mj-text>
+      </mj-column>
+      <mj-column width="84%">
+        <mj-text align="left" font-size="20px" font-weight="600" line-height="120%" padding="32px 0 0">
+          Tu participación en encuestas y actividades:
+        </mj-text>
+      </mj-column>
+      <mj-column width="16%">
+        <mj-text align="left" font-size="20px" font-weight="600" line-height="120%">
+          <div class="number">75%</div>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <!--Trophy-->
+    <mj-section padding="32px 0">
+      <mj-column width="50%">
+        <mj-image src="./images/trophy_nicequest.jpg" alt="your Nicequest trophy" padding="0" />
+      </mj-column>
+      <mj-column width="50%" css-class="extra-pt">
+        <mj-text align="left" css-class="p-mobile" font-size="18px" font-weight="400" color="#636574" padding="0 32px 16px">
+          Enhorabuena. Eres un auténtico amante de Nicequest. Sigue participando así para inspirar al futuro.
+        </mj-text>
+        <mj-text css-class="p-mobile" align="left" font-size="18px" font-weight="400" color="#636574" padding="0 32px 20px">
+          Comparte esta imagen en redes y participa en el concurso <strong>#MyNicequestYear2023</strong>
+        </mj-text>
+        <mj-button mj-class="button" css-class="button-dark, p-mobile" href="#" target="_blank" align="left">
+          Compartir
+        </mj-button>
+      </mj-column>
+      <mj-column width="80%">
+        <mj-text align="left" font-size="12px" font-weight="400" padding="10px 0" color="#636574" css-class="extra-pt  p-mobile">
+          *Debes seguirnos en la red social en la que participes.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <!--Steps-->
+    <mj-section padding="8px 0" css-class="mobile-wrapper">
+      <mj-column width="33%" padding-right="20px" css-class="extra-pb">
+        <mj-raw>
+          <div style="width: 38px; height: 5px; border-radius: 50px; background-color: #FF4B00; padding: 0;"></div>
+        </mj-raw>
+        <mj-text align="left" color="#A1A2B3" font-size="46px" font-weight="700" line-height="100%" padding="16px 0 0">
+          01
+        </mj-text>
+        <mj-text align="left" color="#636574" font-weight="500" line-height="100%" padding="16px 0 0">
+          <p class="steps-text">
+            Súbela en stories de Instagram y menciónanos @nicequest
+          </p>
+        </mj-text>
+      </mj-column>
+      <mj-column width="33%" padding-right="20px" css-class="extra-pb">
+        <mj-raw>
+          <div style="width: 38px; height: 5px; border-radius: 50px; background-color: #105AE1; padding: 0;"></div>
+        </mj-raw>
+        <mj-text align="left" color="#A1A2B3" font-size="46px" font-weight="700" line-height="100%" padding="16px 0 0">
+          02
+        </mj-text>
+        <mj-text align="left" color="#636574" font-weight="500" line-height="100%" padding="16px 0 0">
+          <p class="steps-text">
+            Compártela en Twitter con el hashtag #MyNicequestYear2023
+          </p>
+        </mj-text>
+      </mj-column>
+      <mj-column width="33%" padding-right="20px">
+        <mj-raw>
+          <div style="width: 38px; height: 5px; border-radius: 50px; background-color: #FFC500; padding: 0;"></div>
+        </mj-raw>
+        <mj-text align="left" color="#A1A2B3" font-size="46px" font-weight="700" line-height="100%" padding="16px 0 0">
+          03
+        </mj-text>
+        <mj-text align="left" color="#636574" font-weight="500" line-height="100%" padding="16px 0 0">
+          <p class="steps-text">
+            Publícala en nuestro muro de Facebook con el hashtag #MyNicequestYear2023
+          </p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <!--FAQ-->
+    <mj-section css-class="mobile-wrapper">
+      <mj-column width="50%" padding="40px 20px 0 0">
+        <mj-text align="left" color="#222432" font-size="16px" padding="0 0 16px" font-weight="500">
+          ¿Qué puedo ganar?
+        </mj-text>
+        <mj-text align="left" color="#222432" font-size="16px" padding="0 0 8px" font-weight="700">
+          2300 Korus
+        </mj-text>
+        <mj-text mj-class="body-text" padding="0 0 24px">
+          La misma cantidad de Korus que sumaste en el 2023.
+        </mj-text>
+        <mj-text align="left" color="#222432" font-size="16px" padding="0 0 16px" font-weight="500">
+          ¿Cómo participo?
+        </mj-text>
+        <mj-text mj-class="body-text" padding="0 0 24px">
+          Comparte esta imagen en cualquiera de nuestras redes sociales, si lo haces en las tres, tendrás triple participación.
+        </mj-text>
+        <mj-text align="left" color="#222432" font-size="16px" padding="0 0 16px" font-weight="500">
+          ¿Hasta cuándo puedo participar?
+        </mj-text>
+        <mj-text mj-class="body-text" padding="0 0 24px">
+          Hasta el 16 de enero. El 17 anunciaremos el ganador en todas nuestras redes.
+        </mj-text>
+      </mj-column>
+      <mj-column width="50%" css-class="faq-pt">
+        <mj-image src="./images/girl_img.png" alt="A young woman, showing her phone screen with the Nicequest trophy photo." />
+      </mj-column>
+    </mj-section>
+    <!--Firma-->
+    <mj-section padding="0" css-class="mobile-wrapper">
+      <mj-group>
+        <mj-column width="100%">
+          <mj-text mj-class="body-text" padding="0 0 24px">
+            Cada dato compartido con nosotros contribuye a definir cómo es la sociedad y a inspirar el futuro. Quien tú eres, importa.
+          </mj-text>
+          <mj-text mj-class="body-text" padding="0 0 8px">
+            Saludos,
+          </mj-text>
+          <mj-text mj-class="body-text" padding="0">
+            Equipo Nicequest
+          </mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <!--Footer-->
+    <mj-section padding="40px 0 20px" css-class="mobile-wrapper">
+      <mj-column width="50%">
+        <mj-text>
+          <div class="footer-links">
+            <a href="https://www.facebook.com/"><img width="32px" src="./images/fb_link.png" /></a>
+            <a href="https://twitter.com/nicequest"><img width="32px" src="./images/x_link.png" /></a>
+            <a href="https://www.instagram.com/nicequest/"><img width="32px" src="./images/insta_link.png" /></a>
+            <a href="https://www.youtube.com/c/nicequest"><img width="32px" src="./images/youtube_link.png" /></a>
+          </div>
+        </mj-text>
+        <!--Another option for social links-->
+        <!-- <mj-social font-size="15px" icon-size="30px" mode="horizontal" padding="0" align="left">
+          <mj-social-element name="twitter" href="https://twitter.com/nicequest" background-color="#A1A2B3" padding="4px">
+          </mj-social-element>
+          <mj-social-element name="facebook" href="https://www.facebook.com/Nicequest/" background-color="#A1A2B3" padding="4px">
+          </mj-social-element>
+          <mj-social-element name="instagram" href="https://www.instagram.com/nicequest/" background-color="#A1A2B3" padding="4px">
+          </mj-social-element>
+          <mj-social-element name="youtube" href="https://www.youtube.com/c/nicequest" background-color="#A1A2B3" padding="4px">
+          </mj-social-element>
+        </mj-social> -->
+      </mj-column>
+      <mj-column width="50%">
+        <mj-text align="right" font-size="12px" font-weight="400" padding="10px 0" color="#636574">
+          <div class="center-text">
+            <a href="https://www.nicequest.com/" class="link">&copy; Nicequest desde 2005 en España</a>
+          </div>
+        </mj-text>
+      </mj-column>
   </mj-body>
 </mjml>

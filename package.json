@@ -12,11 +12,12 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {}
-,
+  "dependencies": {
+    "handlebars": "^4.7.8"
+  },
   "devDependencies": {
-    "mjml": "^4.15.3",
     "concurrently": "6.2.1",
-    "live-server": "1.2.1"
+    "live-server": "1.2.1",
+    "mjml": "^4.15.3"
   }
 }
